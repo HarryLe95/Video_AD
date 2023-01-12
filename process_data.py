@@ -4,7 +4,7 @@ import cv2
 def parse_args():
     parser = argparse.ArgumentParser("Video to Frame")
     parser.add_argument("--video","-v", help="Input video.", type=str,default="RawData/TimelapseVideo.mp4")
-    parser.add_argument("--make_frames","-f",type=bool,action='store_false')
+    parser.add_argument("--make_frames","-f",action='store_false')
     args = parser.parse_args()
     return args 
 
